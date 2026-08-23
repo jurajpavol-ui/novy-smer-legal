@@ -34,7 +34,37 @@
     <li>krátké osobní poznámky (deník),</li>
     <li>obecná mapa poznatků s odkazy na veřejné výzkumné zdroje,</li>
     <li>volitelný zámek Face ID / kód zařízení,</li>
-    <li>šest vizuálních stylů.</li>
+    <li>osm vizuálních stylů.</li>
+  </ul>
+
+  <h2>Konkrétní funkce</h2>
+  <ul>
+    <li>jedna nebo více <strong>cest (journeys)</strong> s vlastním datem začátku,</li>
+    <li><strong>check-iny</strong> a krátké poznámky,</li>
+    <li><strong>slipy</strong> — záznamy návratu,</li>
+    <li><strong>urge events</strong> s volitelnou intenzitou (0–10) a spouštěči,</li>
+    <li>volitelné <strong>náklady a úspory</strong> (částky),</li>
+    <li><strong>pledges / if-then</strong> záměry,</li>
+    <li>volitelný <strong>SOS kontakt</strong> (jméno a/nebo telefon) pro tísňové situace,</li>
+    <li>verzovaná potvrzení (18+, metodika, případné upozornění k alkoholu) s časovými razítky,</li>
+    <li>ruční <strong>JSON záloha</strong> přes systémový Share Sheet (export i import).</li>
+  </ul>
+
+  <h2>Jak jsou data uložena</h2>
+  <ul>
+    <li>šifrované úložiště aplikace (AES-GCM, klíč v iOS Keychain),</li>
+    <li>soubor vyloučen ze záloh iCloud i iTunes,</li>
+    <li>žádný účet, cloud, reklamy ani analytika,</li>
+    <li>mimo zařízení se data dostanou jen při akcích, které sami zahájíte (otevření externího odkazu, vytočení čísla nebo uložení vlastní JSON zálohy),</li>
+    <li>exportovaná JSON záloha není chráněna šifrováním úložiště aplikace; její bezpečné uložení je na vás,</li>
+    <li>při importu zálohy se nepřenášejí potvrzení 18+, metodiky ani upozornění k alkoholu; aktuální upozornění je nutné potvrdit znovu.</li>
+  </ul>
+
+  <h2>Upozornění</h2>
+  <ul>
+    <li>nejedná se o lékařskou ani krizovou službu,</li>
+    <li>aplikace neměří zdravotní stav, nestanovuje diagnózu, neposkytuje léčbu, dávkování, tapering ani detoxikační plán,</li>
+    <li>nenahrazuje odbornou pomoc.</li>
   </ul>
 
   <h2>Co aplikace nedělá</h2>
@@ -46,7 +76,7 @@
   </ul>
 
   <h2>Časté otázky</h2>
-  <p><strong>Kde jsou moje data?</strong><br />Jen v tomto iPhonu, v šifrovaném úložišti aplikace.</p>
+  <p><strong>Kde jsou moje data?</strong><br />Běžně jen v tomto iPhonu, v šifrovaném úložišti aplikace. Mimo aplikaci se dostanou pouze tehdy, když sami vyexportujete JSON zálohu nebo zahájíte externí akci.</p>
   <p><strong>Jak data smažu?</strong><br />V aplikaci: Záznamy → O aplikaci a soukromí → Smazat všechna data. Nebo odinstalujte aplikaci.</p>
   <p><strong>Funguje bez internetu?</strong><br />Ano. Internet se použije jen když otevřete externí odkaz ve Safari nebo voláte tísňovou linku.</p>
   <p><strong>Potřebuji účet?</strong><br />Ne.</p>
@@ -55,6 +85,21 @@
   <p>
     Pokud jde o ohrožení života nebo zdraví, volejte místní tísňové složky
     (v Česku <strong>155</strong> nebo <strong>112</strong>). Aplikace krizovou pomoc nenahrazuje.
+  </p>
+
+  <h2>Odvykání alkoholu a bezpečnost</h2>
+  <p>
+    Náhlé omezení nebo vysazení alkoholu může být pro některé lidi zdravotně nebezpečné.
+    Pokud pijete denně nebo ve velkém množství, případně jste už měli abstinenční příznaky,
+    nepostupujte bez posouzení zdravotníkem. Tato aplikace neslouží jako návod na tapering
+    ani detox a neurčuje bezpečný postup.
+  </p>
+
+  <h2>Linka pro odvykání (ČR)</h2>
+  <p>
+    <strong>Národní linka pro odvykání: 800 350 000</strong> (bezplatná, v pracovní dny 10–18 hodin).
+    Jde o <strong>neakutní</strong> odbornou konzultaci pro lidi, kteří chtějí změnit návykové chování.
+    Při akutním ohrožení života volejte <strong>155</strong> nebo <strong>112</strong>.
   </p>
 
   <h2>Privacy Policy</h2>

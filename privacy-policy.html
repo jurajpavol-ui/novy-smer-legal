@@ -16,7 +16,7 @@
 <body>
   <p class="muted"><a href="index.html">← Nový směr</a></p>
   <h1>Zásady ochrany soukromí</h1>
-  <p class="muted">Privacy Policy · účinné od 16. 8. 2026 · verze 1.0</p>
+  <p class="muted">Privacy Policy · účinné od 23. 8. 2026 · verze 1.1</p>
 
   <h2>1. Kdo jsme</h2>
   <p>
@@ -33,26 +33,45 @@
   <h2>2. Jaký je účel aplikace</h2>
   <p>
     Nový směr je <strong>wellbeing / lifestyle</strong> aplikace pro dospělé.
-    Umožňuje ručně počítat čas od vlastního rozhodnutí, ukládat krátké soukromé poznámky
-    a číst <strong>obecné informace</strong> shrnuté z veřejně dostupných výzkumných a veřejně-zdravotních zdrojů.
+    Umožňuje vést jednu nebo více <strong>cest (journeys)</strong> s vlastním datem začátku,
+    zaznamenávat <strong>check-iny</strong>, <strong>slipy</strong> (návraty),
+    <strong>urge events</strong> včetně volitelné intenzity (např. 0–10) a spouštěčů (triggerů),
+    volitelně zadávat <strong>náklady a úspory</strong>, vytvářet <strong>pledges / if-then</strong> záměry
+    a volitelně uložit <strong>SOS kontakt</strong> (jméno a/nebo telefon) pro tísňové situace.
+    Slouží také ke čtení <strong>obecných informací</strong> shrnutých z veřejně dostupných
+    výzkumných a veřejně-zdravotních zdrojů citovaných přímo v aplikaci.
   </p>
   <p>
-    Aplikace <strong>není</strong> zdravotnický prostředek, neposkytuje diagnózu, léčbu, detoxikační plán,
-    dávkování ani osobní zdravotní předpověď. Nejde o lékařskou službu.
+    Aplikace <strong>není</strong> zdravotnický prostředek a neposkytuje lékařskou službu.
+    Neposkytuje diagnózu, měření zdravotního stavu, léčbu, dávkování, tapering ani detoxikační plán.
+    Nenahrazuje odbornou pomoc.
   </p>
 
   <h2>3. Jaká data zpracováváme</h2>
-  <p><strong>Žádná data se neodesílají na naše servery.</strong> Aplikace nemá účet, cloudovou synchronizaci, reklamy ani vlastní analytiku.</p>
+  <p><strong>Žádná data se neodesílají na naše servery.</strong> Aplikace nemá účet, cloudovou synchronizaci, reklamy ani vlastní analytiku. Data zůstávají na vašem zařízení s výjimkou akcí, které sami zahájíte (otevření externího odkazu, vytočení čísla nebo export vlastní zálohy).</p>
   <p>Na vašem zařízení mohou být lokálně uloženy například:</p>
   <ul>
-    <li>zvolené počítadlo a datum začátku,</li>
-    <li>volitelné osobní poznámky a záměry,</li>
-    <li>volba vizuálního stylu,</li>
+    <li>jedna nebo více cest (journeys) včetně data začátku a volitelného popisu,</li>
+    <li>check-iny a krátké osobní poznámky,</li>
+    <li>slipy (záznamy návratu),</li>
+    <li>urge events včetně volitelné intenzity (např. 0–10) a spouštěčů (triggerů),</li>
+    <li>volitelné náklady a úspory (částky),</li>
+    <li>volitelné pledges / if-then záměry,</li>
+    <li>volitelný SOS kontakt — jméno a/nebo telefon,</li>
+    <li>volba vizuálního stylu (z 8 dostupných),</li>
+    <li>časová razítka <strong>verzovaných potvrzení</strong> (18+, metodika, případné upozornění k alkoholu),</li>
     <li>volitelné nastavení zámku aplikace (Face ID / kód zařízení).</li>
   </ul>
   <p>
     Tato data zůstávají v šifrovaném souboru v aplikaci (AES-GCM, klíč v iOS Keychain),
-    s ochranou souboru systémem iOS a vyloučením ze záloh iCloud/iTunes backup.
+    s ochranou souboru systémem iOS a vyloučením ze záloh iCloud i iTunes.
+  </p>
+  <p>
+    Můžete si ručně vyexportovat <strong>JSON zálohu</strong> přes systémový Share Sheet.
+    Tento soubor opouští sandbox aplikace a je uložen do vámi zvoleného umístění
+    — není dále chráněn šifrováním úložiště aplikace a musíte jej bezpečně uložit sami. Při importu se přenesou vaše cesty,
+    check-iny, slipy, urges, náklady a pledges, ale <strong>verzovaná potvrzení (18+,
+    metodika, alkohol) se nepřenášejí</strong> — aktuální upozornění se po importu zobrazí znovu.
   </p>
 
   <h2>4. Co nesbíráme</h2>
@@ -65,9 +84,11 @@
 
   <h2>5. Odkazy mimo aplikaci</h2>
   <p>
-    Aplikace může otevřít systémový prohlížeč na veřejné HTTPS zdroje (např. výzkumné stránky)
-    nebo systémovou telefonní aplikaci pro tísňová čísla (155, 112).
-    Provozovatelé těchto služeb mají vlastní podmínky a zásady soukromí.
+    Aplikace může otevřít systémový prohlížeč na veřejné HTTPS zdroje (výzkumné
+    a veřejně-zdravotní stránky) nebo systémovou telefonní aplikaci pro tísňová čísla (155, 112),
+    Národní linku pro odvykání či volitelný SOS kontakt.
+    Tyto akce vždy zahájíte sami klepnutím. Provozovatelé těchto služeb mají vlastní
+    podmínky a zásady soukromí.
   </p>
 
   <h2>6. Biometrie</h2>
@@ -84,7 +105,7 @@
 
   <h2>8. Děti</h2>
   <p>
-    Aplikace je určena dospělým. Není cílena na děti mladší 17 let
+    Aplikace je určena dospělým. Není cílena na osoby mladší 18 let
     (mj. s ohledem na tematiku návykových látek v obecné vzdělávací části).
   </p>
 
