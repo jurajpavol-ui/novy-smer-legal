@@ -16,7 +16,7 @@
 <body>
   <p class="muted"><a href="index.html">← Nový směr</a></p>
   <h1>Zásady ochrany soukromí</h1>
-  <p class="muted">Privacy Policy · účinné od 24. 8. 2026 · verze 1.2</p>
+  <p class="muted">NÁVRH pro aktualizaci 1.9 · připraveno 19. 9. 2026 · dosud nezveřejněno</p>
 
   <h2>1. Kdo jsme</h2>
   <p>
@@ -30,99 +30,38 @@
     E-mail: <a href="mailto:jurajpavol@infini-systems.cz">jurajpavol@infini-systems.cz</a>
   </p>
 
-  <h2>2. Jaký je účel aplikace</h2>
-  <p>
-    Nový směr je <strong>wellbeing / lifestyle</strong> aplikace pro dospělé.
-    Umožňuje vést jednu nebo více <strong>cest (journeys)</strong> s vlastním datem začátku,
-    zaznamenávat <strong>check-iny</strong>, <strong>slipy</strong> (návraty),
-    <strong>urge events</strong> včetně volitelné intenzity (1–10) a spouštěčů (triggerů),
-    volitelně zadávat <strong>denní náklady</strong> a zobrazovat z nich odvozené úspory
-    a volitelně uložit <strong>SOS kontakt</strong> (jméno a/nebo telefon) pro tísňové situace.
-    Slouží také ke čtení <strong>obecných informací</strong> shrnutých z veřejně dostupných
-    výzkumných a veřejně-zdravotních zdrojů citovaných přímo v aplikaci.
-  </p>
-  <p>
-    Osobní časovač pouze počítá dobu od data zadaného uživatelem. Podle tohoto
-    intervalu může aplikace zvýraznit odpovídající obecné období popsané ve
-    výzkumu; neurčuje tím osobní zdravotní období, výsledek ani stav těla. Jiná
-    obecná období lze procházet ručně.
-  </p>
-  <p>
-    Aplikace <strong>není</strong> zdravotnický prostředek a neposkytuje lékařskou službu.
-    Neposkytuje diagnózu, měření zdravotního stavu, léčbu, dávkování, tapering ani detoxikační plán.
-    Nenahrazuje odbornou pomoc.
-  </p>
+  <h2>2. K čemu aplikace slouží</h2>
+  <p>Nový směr je wellbeing aplikace pro dospělé. Zobrazuje čas od zadaného začátku, odhad úspor a obecné poznatky o změně návyků s odkazy na zdroje. Volitelně zobrazí údaje z aplikace Zdraví a počasí pro ručně vybrané město.</p>
+  <p>Výzkumná období nejsou osobním měřením ani předpovědí zotavení. Aplikace neposkytuje diagnózu, léčbu, dávkování ani postup detoxifikace. Údaje ze Zdraví nepoužívá k potvrzování výzkumných výsledků u konkrétního člověka.</p>
 
-  <h2>3. Jaká data zpracováváme</h2>
-  <p><strong>Žádná data se neodesílají na naše servery.</strong> Aplikace nemá účet, cloudovou synchronizaci, reklamy ani vlastní analytiku. Data zůstávají na vašem zařízení s výjimkou akcí, které sami zahájíte (otevření externího odkazu, vytočení čísla nebo export vlastní zálohy).</p>
-  <p>Na vašem zařízení mohou být lokálně uloženy například:</p>
-  <ul>
-    <li>jedna nebo více cest (journeys) včetně data začátku a volitelného popisu,</li>
-    <li>check-iny a krátké osobní poznámky,</li>
-    <li>slipy (záznamy návratu),</li>
-    <li>urge events včetně volitelné intenzity (1–10) a spouštěčů (triggerů),</li>
-    <li>volitelný denní náklad a z něj vypočtená úspora,</li>
-    <li>volitelné pledges / if-then záměry z dřívější verze nebo importované zálohy,</li>
-    <li>volitelný SOS kontakt — jméno a/nebo telefon,</li>
-    <li>profilová volba z dřívější verze nebo importované zálohy,</li>
-    <li>volba vizuálního stylu (z 8 dostupných),</li>
-    <li>časová razítka <strong>verzovaných potvrzení</strong> (18+, metodika, případné upozornění k alkoholu),</li>
-    <li>volitelné nastavení zámku aplikace (Face ID / kód zařízení).</li>
-  </ul>
-  <p>
-    Tato data zůstávají v šifrovaném souboru v aplikaci (AES-GCM, klíč v iOS Keychain),
-    s ochranou souboru systémem iOS a vyloučením ze záloh iCloud i iTunes.
-  </p>
-  <p>
-    Můžete si ručně vyexportovat <strong>JSON zálohu</strong> přes systémový Share Sheet.
-    Tento soubor opouští sandbox aplikace a je uložen do vámi zvoleného umístění
-    — není dále chráněn šifrováním úložiště aplikace a musíte jej bezpečně uložit sami. Při importu se přenesou vaše cesty,
-    check-iny, slipy, urges, denní náklady, SOS kontakty, vizuální nastavení a
-    případné starší hodnoty pledges / if-then a profilu, ale <strong>verzovaná
-    potvrzení (18+, metodika, alkohol) se nepřenášejí</strong> — aktuální
-    upozornění se po importu zobrazí znovu.
-  </p>
+  <h2>3. Místní údaje a zálohy</h2>
+  <p><strong>Nemáme vlastní server pro vaše údaje.</strong> Není nutný účet; aplikace neobsahuje reklamy, sledování napříč aplikacemi ani vlastní analytiku.</p>
+  <p>V zařízení uchovává vaše cesty, datum začátku, volitelný osobní důvod a denní náklad, potvrzení věku a vzdělávacího účelu a nastavení zámku. Z dřívějších verzí nebo importovaných záloh mohou zůstat osobní poznámky, dřívější záznamy chutí, kontakty a další historické hodnoty, přestože pro ně aktuální rozhraní nenabízí zadávání. Historie porušení se v této aktualizaci odstraňuje také při importu; dosavadní účinný začátek počítadla a úspory zůstávají zachované.</p>
+  <p>Úložiště cest je šifrované pomocí AES-GCM, klíč je v iOS Keychain. Tento soubor má ochranu souborů iOS a je vyloučen ze systémových záloh. Aplikace neposkytuje vlastní cloudovou synchronizaci.</p>
+  <p>Ruční export je <strong>čitelný, nešifrovaný JSON soubor</strong>. Obsahuje cesty, případné uchované historické údaje a nastavení uložená společně s nimi. Údaje ze Zdraví, preference zapnutí zdravotního přehledu ani zvolené město do této zálohy nevstupují. Umístění nebo příjemce volíte v systémovém sdílení vy; můžete zvolit i vlastní cloudové úložiště. Kopie mimo aplikaci nespravujeme ani nemažeme. Při importu se znovu vyžadují aktuální potvrzení věku, metodiky a případného upozornění k alkoholu.</p>
+  <p>Preference zapnutí zdravotního přehledu a zvolené město včetně jeho souřadnic se ukládají odděleně do místních nastavení aplikace. Nejde o kopii zdravotních údajů ani o GPS polohu zařízení.</p>
 
-  <h2>4. Co nesbíráme</h2>
-  <ul>
-    <li>nevedeme uživatelské účty,</li>
-    <li>nesbíráme e-mail, telefon ani identifikátory pro reklamu,</li>
-    <li>nepoužíváme HealthKit, sledování napříč aplikacemi ani reklamní SDK,</li>
-    <li>neodesíláme osobní záznamy na internet.</li>
-  </ul>
+  <h2>4. Volitelné propojení se Zdravím</h2>
+  <p>Po vašem souhlasu může aplikace přes Apple HealthKit číst dostupný spánek včetně fází, kroky, vzdálenost chůze a běhu a údaje o trénincích včetně délky, vzdálenosti (také při cyklistice a plavání), aktivní energie a dostupného tepu. Rozsah přístupu řídíte v systému Apple. Pro hlavní počítadlo a knihovnu poznatků není propojení nutné.</p>
+  <p>Načtené zdravotní hodnoty aplikace zpracovává pouze v paměti pro zobrazení přehledů a souhrnů. Nezapisuje je zpět do Zdraví, neukládá je do úložiště cest, nepřidává je do exportu a neposílá je vývojáři. Nepoužívá je pro reklamu nebo sledování.</p>
+  <p>Odpojení zdravotního přehledu vymaže načtené hodnoty z aplikace. Nemění původní záznamy ve Zdraví; oprávnění můžete samostatně odebrat v nastavení Apple. Případnou synchronizaci a zálohování samotného Zdraví přes iCloud spravuje Apple podle vašeho nastavení, nikoli Nový směr.</p>
 
-  <h2>5. Odkazy mimo aplikaci</h2>
-  <p>
-    Aplikace může otevřít systémový prohlížeč na veřejné HTTPS zdroje (výzkumné
-    a veřejně-zdravotní stránky) nebo systémovou telefonní aplikaci pro tísňová čísla (155, 112),
-    Národní linku pro odvykání či volitelný SOS kontakt.
-    Tyto akce vždy zahájíte sami klepnutím. Provozovatelé těchto služeb mají vlastní
-    podmínky a zásady soukromí.
-  </p>
+  <h2>5. Počasí a internetové služby</h2>
+  <p>Při vyhledání města používá aplikace Apple MapKit. Pro počasí posílá souřadnice vybraného města službě Apple WeatherKit a načítá aktuální podmínky a předpověď. Nežádá přístup k poloze zařízení přes GPS. Po zvolení města se počasí může obnovovat při používání aplikace.</p>
+  <p>Tyto funkce vyžadují internet a služby Apple zpracovávají požadavky podle vlastních podmínek a zásad soukromí. Vývojář nedostává vaše zdravotní údaje, osobní cesty ani historii vyhledávání měst. Město lze v detailu počasí odebrat.</p>
+  <p>Externí zdrojové a podpůrné odkazy nebo volání zahajujete klepnutím. Otevřený web či telefonní služba mají vlastní pravidla. Počítadlo a vestavěné poznatky fungují i bez internetu.</p>
 
-  <h2>6. Biometrie</h2>
-  <p>
-    Pokud si zapnete zámek aplikace, použije se systémové rozhraní iOS (Face ID, Touch ID nebo kód zařízení).
-    Biometrické údaje nezískáváme ani neukládáme — ověření probíhá výhradně v systému Apple.
-  </p>
+  <h2>6. Zámek aplikace</h2>
+  <p>Volitelný zámek používá ověření iOS (Face ID, Touch ID nebo kód zařízení). Biometrické údaje nezískáváme ani neukládáme.</p>
 
-  <h2>7. Uchování a smazání</h2>
-  <p>
-    Data zůstávají v zařízení, dokud aplikaci neodstraníte nebo v aplikaci nezvolíte
-    „Smazat všechna data“. Po smazání dat nebo odinstalaci aplikace lokální záznamy zaniknou.
-  </p>
+  <h2>7. Smazání</h2>
+  <p>V Nastavení aplikace lze smazat místní data. Úspěšné smazání odstraní uložené cesty, odpojí zdravotní přehled a odebere město. Nemění údaje v aplikaci Zdraví ani již vyexportované soubory; ty spravujete samostatně. Odinstalace odstraní místní úložiště aplikace.</p>
 
   <h2>8. Děti</h2>
-  <p>
-    Aplikace je určena dospělým. Není cílena na osoby mladší 18 let
-    (mj. s ohledem na tematiku návykových látek v obecné vzdělávací části).
-  </p>
+  <p>Aplikace je určena dospělým od 18 let a není cílena na děti.</p>
 
-  <h2>9. Změny</h2>
-  <p>
-    Tuto politiku můžeme aktualizovat. Aktuální znění vždy najdete na této stránce.
-    Datum účinnosti je uvedeno nahoře.
-  </p>
+  <h2>9. Změny těchto zásad</h2>
+  <p>Při změně funkcí aktualizujeme i popis zpracování údajů. Aktuální verze a datum jsou uvedeny nahoře.</p>
 
   <h2>10. Kontakt</h2>
   <p>
