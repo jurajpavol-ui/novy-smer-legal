@@ -16,7 +16,7 @@
 <body>
   <p class="muted"><a href="index.html">← New Direction</a> · <a href="privacy-policy.html" lang="cs">Česky</a></p>
   <h1>Privacy Policy</h1>
-  <p class="muted">Effective August 24, 2026 · version 1.2</p>
+  <p class="muted">Version 1.9 · effective September 20, 2026</p>
 
   <h2>1. Who we are</h2>
   <p>The <strong>New Direction</strong> app (bundle ID <code>cz.novysmer.app</code>) is published by:</p>
@@ -29,95 +29,40 @@
   </p>
 
   <h2>2. Purpose of the app</h2>
-  <p>
-    New Direction is a <strong>wellbeing and lifestyle</strong> app for adults. It lets you keep one or more <strong>journeys</strong>
-    with your own start date, record <strong>check-ins</strong>, <strong>slips</strong> (returns),
-    <strong>urge events</strong> with optional intensity (1–10) and triggers,
-    optionally enter a <strong>daily cost</strong> and see savings derived from it,
-    and optionally store an <strong>SOS contact</strong> (name and/or phone) for emergencies.
-    It also lets you read <strong>general information</strong> summarized from publicly available research
-    and public-health sources cited directly in the app.
-  </p>
-  <p>
-    The personal timer only counts time from a date entered by the user. Based
-    on that interval, the app may highlight the matching general period
-    described in research; this does not determine a personal health period,
-    outcome, or the state of the user's body. Other general periods can be
-    explored manually.
-  </p>
-  <p>
-    The app is not a medical device or medical service. It does not provide diagnosis,
-    measurement of health, treatment, dosing, tapering, or a detox plan.
-    It does not replace professional help.
-  </p>
+  <p>New Direction is a wellbeing app for adults. It shows elapsed time from a chosen start, estimated savings and general information about changing habits, with source links. Optional features display Apple Health data and weather for a manually selected city.</p>
+  <p>Research periods are not personal measurements or recovery predictions. The app does not provide diagnosis, treatment, dosing or detox instructions. It does not use Health data to confirm that a research finding has occurred in an individual.</p>
 
-  <h2>3. Data processed by the app</h2>
-  <p><strong>No personal data is sent to our servers.</strong> The app has no account, cloud synchronization, advertising, or first-party analytics. Data stays on your device except when you initiate an external action (opening an external link, dialing a number, or exporting your own backup).</p>
-  <p>The following data may be stored locally on your device:</p>
-  <ul>
-    <li>one or more journeys, including start date and optional description,</li>
-    <li>check-ins and short personal notes,</li>
-    <li>slips (records of a return),</li>
-    <li>urge events with optional intensity (1–10) and triggers,</li>
-    <li>an optional daily cost and savings calculated from it,</li>
-    <li>optional pledges / if-then intentions from an earlier version or imported backup,</li>
-    <li>an optional SOS contact — name and/or phone,</li>
-    <li>a profile choice retained from an earlier version or imported backup,</li>
-    <li>your visual style selection (from 8 available styles),</li>
-    <li><strong>versioned acknowledgement</strong> timestamps (18+, methodology, and any alcohol warning),</li>
-    <li>the optional app-lock setting (Face ID or device passcode).</li>
-  </ul>
-  <p>
-    This data remains in an encrypted app file (AES-GCM, with its key in the iOS Keychain),
-    protected by iOS file protection and excluded from iCloud and iTunes backups.
-  </p>
-  <p>
-    You can manually export a <strong>JSON backup</strong> through the iOS share sheet.
-    That file leaves the app sandbox and is written to a location you choose —
-    it is no longer protected by the app-storage encryption, and you are responsible for storing it safely.
-    On import, your journeys, check-ins, slips, urges, daily costs, SOS contacts,
-    visual settings, and any legacy pledge / if-then and profile values are restored,
-    but <strong>versioned acknowledgements (18+, methodology, alcohol) are not transferred</strong>
-    and the current notices will be shown again after import.
-  </p>
+  <h2>3. Local data and backups</h2>
+  <p><strong>The app has no developer-operated server for Health values or stored journeys.</strong> No account is required. The app has no advertising, cross-app tracking or first-party analytics.</p>
+  <p>Your device stores journeys, start dates, optional personal reasons and daily costs, age and educational acknowledgements, and app-lock settings. Personal notes, past craving records, contacts and other legacy values may remain from earlier versions or imported backups even when the current interface no longer offers entry for them. This update removes slip history, including during import, while preserving the existing effective counter start and savings.</p>
+  <p>Journey storage uses AES-GCM encryption with its key in the iOS Keychain. That file has iOS file protection and is excluded from system backups. The app does not provide its own cloud synchronization.</p>
+  <p>A manual export is a <strong>readable, unencrypted JSON file</strong>. It includes journeys, any retained legacy records and settings stored with them. Health records, the Health overview preference and the selected city are not included in this backup. You choose its destination or recipient in the system share sheet, including your own cloud storage if desired. We do not manage or delete copies outside the app. Import requires the current age, methodology and any alcohol acknowledgements again.</p>
+  <p>The Health overview preference and selected city, including its coordinates, are stored separately in local app settings. These are not copies of Health records or the device's GPS location.</p>
 
-  <h2>4. Data we do not collect</h2>
-  <ul>
-    <li>we do not operate user accounts,</li>
-    <li>we do not collect email addresses, phone numbers, or advertising identifiers,</li>
-    <li>we do not use HealthKit, cross-app tracking, or advertising SDKs,</li>
-    <li>we do not upload your personal records.</li>
-  </ul>
+  <h2>4. Optional Apple Health connection</h2>
+  <p>With your permission, the app can use Apple HealthKit to read available sleep records and stages, steps, walking and running distance, and workout information including duration, distance (including cycling and swimming), active energy and available heart rate. You control access through Apple system settings. The main counter and knowledge library do not require this connection.</p>
+  <p>Health values are processed only in memory to display overviews and summaries. The app does not write them back to Health, store them with journeys, include them in exports or send them to the developer. It does not use them for advertising or tracking.</p>
+  <p>Disconnecting the Health overview clears its loaded values. This does not change the original records in Apple Health; you can revoke permission separately in Apple settings. Any iCloud synchronization or backup of Apple Health itself is managed by Apple according to your settings, independently of New Direction.</p>
 
-  <h2>5. Links outside the app</h2>
-  <p>
-    The app may ask iOS to open public HTTPS sources (research and public-health pages) in the system browser
-    or open the Phone app for Czech emergency numbers (155 and 112), the Czech National Quitline,
-    or an optional SOS contact. These actions are always initiated by you.
-    Those services operate under their own terms and privacy policies.
-  </p>
+  <h2>5. Weather and internet services</h2>
+  <p>City search uses Apple MapKit. Weather requests send the selected city's coordinates to Apple WeatherKit to retrieve current conditions and forecasts. The app does not request access to the device's GPS location. After a city is selected, weather may refresh while you use the app.</p>
+  <p>These features require internet access, and Apple services process requests under their own terms and privacy policies. These requests do not send your Health values, personal journeys or city-search history to the developer. You can remove the selected city in the weather detail.</p>
+  <p>You initiate external source/support links and calls by tapping them. The destination website or telephone service has its own policies. The counter and bundled knowledge work offline.</p>
 
-  <h2>6. Biometrics</h2>
-  <p>
-    If you enable the app lock, authentication uses the iOS system interface (Face ID, Touch ID, or device passcode).
-    We do not receive or store biometric data; authentication is handled entirely by Apple systems.
-  </p>
+  <h2>6. App lock</h2>
+  <p>The optional lock uses iOS authentication (Face ID, Touch ID or device passcode). We do not receive or store biometric data.</p>
 
-  <h2>7. Retention and deletion</h2>
-  <p>
-    Data stays on your device until you delete the app or choose “Delete all data” inside the app.
-    Deleting app data or uninstalling the app removes the local records.
-  </p>
+  <h2>7. Deletion</h2>
+  <p>You can delete local app data in Settings. Successful deletion removes stored journeys, disconnects the Health overview and clears the selected city. It does not alter Apple Health records or previously exported files, which you manage separately. Uninstalling removes the app's local storage.</p>
 
   <h2>8. Children</h2>
-  <p>
-    The app is intended for adults and is not directed to people under 18, including because its general educational section discusses substance-related topics.
-  </p>
+  <p>The app is intended for adults aged 18 or over and is not directed to children.</p>
 
-  <h2>9. Changes</h2>
-  <p>We may update this policy. The current version and effective date will always be published on this page.</p>
+  <h2>9. Changes to this policy</h2>
+  <p>We update this description when features and data processing change. The current version and date appear above.</p>
 
   <h2>10. Contact</h2>
+  <p>You can optionally suggest a feature by email to <a href="mailto:jurajpavol@infini-systems.cz">jurajpavol@infini-systems.cz</a>. The button opens your email app; you write and review the message and decide whether to send it. The app does not automatically attach any files, Health values or journey data. If you send the email, the publisher receives the content you wrote and the sender contact details provided by your email for replying and considering the suggestion. This voluntary communication requires no app account and is not automatic collection of app data.</p>
   <p>Privacy questions: <a href="mailto:jurajpavol@infini-systems.cz">jurajpavol@infini-systems.cz</a></p>
 </body>
 </html>
