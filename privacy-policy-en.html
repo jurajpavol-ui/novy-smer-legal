@@ -16,7 +16,7 @@
 <body>
   <p class="muted"><a href="index.html">← New Direction</a> · <a href="privacy-policy.html" lang="cs">Česky</a></p>
   <h1>Privacy Policy</h1>
-  <p class="muted">Version 1.10 · effective October 4, 2026</p>
+  <p class="muted">Version 1.11 · effective October 4, 2026</p>
 
   <h2>1. Who we are</h2>
   <p>The <strong>New Direction</strong> app (bundle ID <code>cz.novysmer.app</code>) is published by:</p>
@@ -40,6 +40,13 @@
   <p>A manual export is a <strong>readable, unencrypted JSON file</strong>. It includes journeys, identifiers of acknowledged personal achievements, any entered cigarette time-estimate values, any retained legacy records and settings stored with them. Health records, the Health overview preference, the light or dark appearance preference and the selected city are not included in this backup. You choose its destination or recipient in the system share sheet, including your own cloud storage if desired. We do not manage or delete copies outside the app. Import requires the current age, methodology and any alcohol acknowledgements again.</p>
   <p>The light or dark appearance preference, Health overview preference and selected city, including its coordinates, are stored separately in local app settings. These are not copies of Health records or the device's GPS location.</p>
 
+  <h2>Optional widgets</h2>
+  <p>Widgets are optional. Enable statistics in the app's Settings first. The app then stores a limited projection of the selected journey in the local container shared with its own widget extension: the effective start of the current segment, an optional daily cost estimate, and the titles and dates of upcoming milestones. The habit name is only included with a separate opt-in; the default display is “My journey”. Widgets receive no Health readings, personal reasons, notes, contacts or journey history and make no network requests.</p>
+  <p>The projection uses iOS file protection and is excluded from system backups. It is not shared with another app or a developer server. Statistics are withheld while app locking is enabled. The extension uses complete data protection, so iOS may show placeholder content on a locked phone. Turning widget statistics off or deleting app data removes the app's projection and requests a system refresh. iOS controls refresh timing and rendered copies, so a change may not appear immediately. A projection expires at most seven days after the app last refreshes it.</p>
+  <p>Widget preferences are not included in manually exported journey backups.</p>
+
+  <p>The version of the last displayed one-time introduction is stored as a local preference. It is not usage analytics and is excluded from manual journey backups.</p>
+
   <h2>4. Optional Apple Health connection</h2>
   <p>With your permission, the app can use Apple HealthKit to read available sleep records and stages, steps, walking and running distance, and workout information including duration, distance (including cycling and swimming), active energy and available heart rate. You control access through Apple system settings. The main counter and knowledge library do not require this connection.</p>
   <p>Health values are processed only in memory to display overviews and summaries. The app does not write them back to Health, store them with journeys, include them in exports or send them to the developer. It does not use them for advertising or tracking.</p>
@@ -54,7 +61,7 @@
   <p>The optional lock uses iOS authentication (Face ID, Touch ID or device passcode). We do not receive or store biometric data.</p>
 
   <h2>7. Deletion</h2>
-  <p>You can delete local app data in Settings. Successful deletion removes stored journeys, disconnects the Health overview and clears the selected city. It does not alter Apple Health records or previously exported files, which you manage separately. Uninstalling removes the app's local storage.</p>
+  <p>You can delete local app data in Settings. Successful deletion removes stored journeys, disconnects the Health overview, clears the selected city and disables widget statistics and habit-name display. It does not alter Apple Health records or previously exported files, which you manage separately. Uninstalling removes the app's local storage.</p>
 
   <h2>8. Children</h2>
   <p>The app is intended for adults aged 18 or over and is not directed to children.</p>

@@ -16,7 +16,7 @@
 <body>
   <p class="muted"><a href="index.html">← Nový směr</a></p>
   <h1>Zásady ochrany soukromí</h1>
-  <p class="muted">Verze 1.10 · účinné od 4. října 2026</p>
+  <p class="muted">Verze 1.11 · účinné od 4. října 2026</p>
 
   <h2>1. Kdo jsme</h2>
   <p>
@@ -42,6 +42,13 @@
   <p>Ruční export je <strong>čitelný, nešifrovaný JSON soubor</strong>. Obsahuje cesty, identifikátory potvrzených osobních úspěchů, případné zadané hodnoty pro odhad času u cigaret, případné uchované historické údaje a nastavení uložená společně s nimi. Údaje ze Zdraví, preference zapnutí zdravotního přehledu, volba světlého či tmavého vzhledu ani zvolené město do této zálohy nevstupují. Umístění nebo příjemce volíte v systémovém sdílení vy; můžete zvolit i vlastní cloudové úložiště. Kopie mimo aplikaci nespravujeme ani nemažeme. Při importu se znovu vyžadují aktuální potvrzení věku, metodiky a případného upozornění k alkoholu.</p>
   <p>Volba světlého či tmavého vzhledu, preference zapnutí zdravotního přehledu a zvolené město včetně jeho souřadnic se ukládají odděleně do místních nastavení aplikace. Nejde o kopii zdravotních údajů ani o GPS polohu zařízení.</p>
 
+  <h2>Volitelné widgety</h2>
+  <p>Widgety jsou volitelné. V Nastavení aplikace nejprve povolíte zobrazení statistik. Aplikace pak ve společném místním kontejneru svého widgetového rozšíření uloží omezený přehled vybrané cesty: účinný začátek aktuálního úseku, případný denní odhad nákladů a názvy a data nadcházejících milníků. Název návyku předává pouze po samostatném povolení; výchozí zobrazení je „Moje cesta“. Widget nedostává zdravotní údaje, osobní důvod, poznámky, kontakty ani historii cest. Neprovádí síťové požadavky.</p>
+  <p>Přehled chrání ochrana souborů iOS a je vyloučen ze systémové zálohy. Nejde o sdílení s jinou aplikací nebo serverem vývojáře. Při zapnutém zámku aplikace se statistiky widgetu neposkytují. Widgetové rozšíření používá úplnou ochranu dat, proto může systém na zamčeném telefonu zobrazit zástupný obsah. Při vypnutí widgetových statistik nebo smazání dat aplikace odstraní svou kopii přehledu a požádá systém o obnovu. iOS řídí obnovování a své vykreslené kopie; změna nemusí být na ploše viditelná okamžitě. Přehled má platnost nejvýše sedm dní od poslední obnovy aplikací.</p>
+  <p>Preference widgetů nejsou součástí ručně exportované zálohy cest.</p>
+
+  <p>Verze naposledy zobrazeného jednorázového představení novinek se ukládá jako místní preference. Nejde o statistiku používání a není součástí ruční zálohy cest.</p>
+
   <h2>4. Volitelné propojení se Zdravím</h2>
   <p>Po vašem souhlasu může aplikace přes Apple HealthKit číst dostupný spánek včetně fází, kroky, vzdálenost chůze a běhu a údaje o trénincích včetně délky, vzdálenosti (také při cyklistice a plavání), aktivní energie a dostupného tepu. Rozsah přístupu řídíte v systému Apple. Pro hlavní počítadlo a knihovnu poznatků není propojení nutné.</p>
   <p>Načtené zdravotní hodnoty aplikace zpracovává pouze v paměti pro zobrazení přehledů a souhrnů. Nezapisuje je zpět do Zdraví, neukládá je do úložiště cest, nepřidává je do exportu a neposílá je vývojáři. Nepoužívá je pro reklamu nebo sledování.</p>
@@ -56,7 +63,7 @@
   <p>Volitelný zámek používá ověření iOS (Face ID, Touch ID nebo kód zařízení). Biometrické údaje nezískáváme ani neukládáme.</p>
 
   <h2>7. Smazání</h2>
-  <p>V Nastavení aplikace lze smazat místní data. Úspěšné smazání odstraní uložené cesty, odpojí zdravotní přehled a odebere město. Nemění údaje v aplikaci Zdraví ani již vyexportované soubory; ty spravujete samostatně. Odinstalace odstraní místní úložiště aplikace.</p>
+  <p>V Nastavení aplikace lze smazat místní data. Úspěšné smazání odstraní uložené cesty, odpojí zdravotní přehled, odebere město a vypne widgetové statistiky i zobrazení názvu návyku. Nemění údaje v aplikaci Zdraví ani již vyexportované soubory; ty spravujete samostatně. Odinstalace odstraní místní úložiště aplikace.</p>
 
   <h2>8. Děti</h2>
   <p>Aplikace je určena dospělým od 18 let a není cílena na děti.</p>
