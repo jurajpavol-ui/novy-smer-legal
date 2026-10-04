@@ -16,7 +16,7 @@
 <body>
   <p class="muted"><a href="index.html">← New Direction</a> · <a href="support.html" lang="cs">Česky</a></p>
   <h1>Support</h1>
-  <p class="muted">Version 1.9 · effective September 20, 2026</p>
+  <p class="muted">Version 1.10 · effective October 4, 2026</p>
   <p class="muted">New Direction for iPhone</p>
 
   <h2>Contact</h2>
@@ -34,13 +34,18 @@
 
   <h2>What the app offers</h2>
   <ul>
-    <li>An elapsed-time counter, multiple journeys and savings estimated from your own entries.</li>
+    <li>An elapsed-time counter, multiple journeys and savings estimated from your own entries for today, the last 7 × 24 hours or the current journey segment.</li>
+    <li>Personal achievements, a medal collection with details and a journey timeline derived from elapsed time, calendar periods and estimated savings.</li>
+    <li>An optional estimate of time gained based on your previous cigarettes per day and minutes per cigarette.</li>
     <li>Information about alcohol, cigarettes, nicotine vaping, cannabis and cocaine, organized by topic and research period, with further reading and sources.</li>
     <li>An <strong>optional</strong> Apple Health connection: sleep and sleep stages, steps, distance and workouts; daily details, weekly statistics and monthly summaries grouped by week.</li>
     <li>Current weather and forecasts for upcoming days for a manually selected city.</li>
-    <li>A consistent green appearance and three tabs: Overview, Knowledge and Settings.</li>
+    <li>Light and dark appearances with a switch in Overview, and three tabs: Overview, Knowledge and Settings.</li>
     <li>An optional iOS authentication lock and manual backup import/export.</li>
   </ul>
+
+  <h2>What is new in version 1.10</h2>
+  <p>This version adds a light and dark appearance switch, savings for different periods, personal achievements, a medal collection with details and a journey timeline. For cigarettes, you can optionally calculate an estimate of time gained based on your previous smoking routine. These features are calculated on your device and add no new network connections, tracking or permissions.</p>
 
   <h2>Privacy</h2>
   <p><strong>The app does not send loaded Health values or stored journey data to developer servers.</strong> The app requires no account and has no developer-operated server, cloud synchronization, advertising or first-party analytics.</p>
@@ -50,11 +55,12 @@
   <p><strong>Do I need to connect Health or own an Apple Watch?</strong><br />No. The HealthKit connection is entirely optional. The counter, savings and knowledge work without it. Available Health values depend on what is recorded in Apple Health and which read permissions you grant.</p>
   <p><strong>Why is a Health value missing?</strong><br />There may be no record for the selected period, or read access may not be granted. A missing record is not treated as zero. Check the original records and Apple system permissions, then refresh the overview.</p>
   <p><strong>Does disconnecting or deleting the app erase my Apple Health data?</strong><br />No. The app does not write to Health. Disconnecting clears only its loaded overview; you manage original records and permissions through Apple.</p>
-  <p><strong>How is my data backed up?</strong><br />The app does not provide its own cloud backup. A manual backup includes journeys, any retained legacy records and settings stored with them as a readable JSON file at a destination you choose. It excludes Health data, the Health overview preference and the selected city. Any iCloud synchronization of Apple Health is managed independently by Apple according to your settings.</p>
+  <p><strong>How is my data backed up?</strong><br />The app does not provide its own cloud backup. A manual backup includes journeys, identifiers of acknowledged achievements, any cigarette time-estimate values, any retained legacy records and settings stored with them as a readable JSON file at a destination you choose. It excludes Health data, the Health overview preference, the light or dark appearance preference and the selected city. Any iCloud synchronization of Apple Health is managed independently by Apple according to your settings.</p>
   <p><strong>How do I delete my data?</strong><br />Choose deletion of all data in Settings. This removes local journeys, disconnects the Health overview and clears the selected city. It does not delete previously exported files or original Apple Health records.</p>
   <p><strong>Does the app work offline?</strong><br />The counter, savings and bundled knowledge do. Weather, city search and opening web sources require internet access.</p>
   <p><strong>What changed about slip records?</strong><br />Slip entry and legacy slip history have been removed. The existing effective counter start and savings are preserved. Legacy slip records are also removed during backup import.</p>
-  <p><strong>Is the timeline a health prediction?</strong><br />No. It summarizes general research findings. Neither the counter nor Health values confirm personal recovery. The app does not replace healthcare.</p>
+  <p><strong>What do personal achievements and the journey timeline mean?</strong><br />They are based on your journey start, elapsed time, calendar periods and any entered daily costs. They do not use Apple Health or confirm health recovery. The cigarette time-gained estimate is calculated from your entries, rather than measured.</p>
+  <p><strong>Is the research timeline a health prediction?</strong><br />No. It summarizes general research findings. Neither the counter nor Health values confirm personal recovery. The app does not replace healthcare.</p>
 
   <h2>Immediate danger</h2>
   <p>

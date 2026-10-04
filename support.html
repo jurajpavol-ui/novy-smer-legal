@@ -16,7 +16,7 @@
 <body>
   <p class="muted"><a href="index.html">← Nový směr</a></p>
   <h1>Podpora</h1>
-  <p class="muted">Verze 1.9 · účinné od 20. září 2026</p>
+  <p class="muted">Verze 1.10 · účinné od 4. října 2026</p>
   <p class="muted">Support · Nový směr pro iPhone</p>
 
   <h2>Kontakt</h2>
@@ -34,13 +34,18 @@
 
   <h2>Co aplikace nabízí</h2>
   <ul>
-    <li>Počítadlo času, více cest a odhad úspor podle vlastního zadání.</li>
+    <li>Počítadlo času, více cest a odhad úspor podle vlastního zadání pro dnešek, posledních 7 × 24 hodin nebo aktuální úsek cesty.</li>
+    <li>Osobní úspěchy, sbírka medailí s detailem a časová cesta odvozené z uplynulého času, kalendáře a odhadu úspor.</li>
+    <li>Volitelný odhad získaného času podle dřívějšího počtu cigaret za den a minut na jednu cigaretu.</li>
     <li>Poznatky o alkoholu, cigaretách, nikotinovém vapování, konopí a kokainu podle témat a výzkumných období, včetně podrobnějšího čtení a zdrojů.</li>
     <li><strong>Volitelné</strong> propojení se Zdravím: spánek a jeho fáze, kroky, vzdálenost a tréninky; denní detail, týdenní statistiky a měsíční souhrny po týdnech.</li>
     <li>Aktuální počasí a předpověď na další dny pro ručně vybrané město.</li>
-    <li>Jednotný zelený vzhled a tři záložky: Přehled, Poznatky, Nastavení.</li>
+    <li>Světlý a tmavý vzhled s přepnutím v Přehledu a tři záložky: Přehled, Poznatky, Nastavení.</li>
     <li>Volitelný zámek přes ověření iOS a ruční import/export zálohy.</li>
   </ul>
+
+  <h2>Co je nového ve verzi 1.10</h2>
+  <p>Přibylo přepínání světlého a tmavého vzhledu, úspory za různá období, osobní úspěchy, sbírka medailí s detailem a časová cesta. U cigaret si můžete volitelně spočítat odhad získaného času podle svého dřívějšího kouření. Tyto funkce se počítají v zařízení a nepřidávají žádná nová síťová spojení, sledování ani oprávnění.</p>
 
   <h2>Soukromí</h2>
   <p><strong>Aplikace neposílá načtené zdravotní údaje ani uložené cesty na servery vývojáře.</strong> Aplikace nevyžaduje účet a nemá vlastní server, cloudovou synchronizaci, reklamy ani vlastní analytiku.</p>
@@ -50,11 +55,12 @@
   <p><strong>Musím připojit Zdraví nebo mít Apple Watch?</strong><br />Ne. Propojení přes HealthKit je zcela volitelné. Počítadlo, úspory a poznatky fungují i bez něj. Dostupnost zdravotních údajů závisí na tom, co máte zaznamenáno ve Zdraví a co aplikaci dovolíte číst.</p>
   <p><strong>Proč některý zdravotní údaj chybí?</strong><br />Ve Zdraví nemusí být záznam pro zvolené období, případně není povolené jeho čtení. Chybějící záznam nepovažujeme za nulu. Zkontrolujte zdrojové záznamy a oprávnění v systému Apple a obnovte přehled.</p>
   <p><strong>Maže odpojení nebo smazání aplikace moje Zdraví?</strong><br />Ne. Aplikace do Zdraví nezapisuje. Odpojení vymaže jen načtený přehled; původní záznamy a oprávnění spravujete u Apple.</p>
-  <p><strong>Jak se moje data zálohují?</strong><br />Aplikace sama neposkytuje cloudovou zálohu. Ruční zálohu lze exportovat jako čitelný JSON soubor do vámi zvoleného umístění. Obsahuje cesty, případné uchované historické údaje a společně uložená nastavení. Údaje ze Zdraví, zapnutí zdravotního přehledu ani zvolené město neobsahuje. Případnou synchronizaci Zdraví přes iCloud spravuje Apple nezávisle podle vašeho nastavení.</p>
+  <p><strong>Jak se moje data zálohují?</strong><br />Aplikace sama neposkytuje cloudovou zálohu. Ruční zálohu lze exportovat jako čitelný JSON soubor do vámi zvoleného umístění. Obsahuje cesty, identifikátory potvrzených úspěchů, případné hodnoty pro odhad času u cigaret, případné uchované historické údaje a společně uložená nastavení. Údaje ze Zdraví, zapnutí zdravotního přehledu, volbu světlého či tmavého vzhledu ani zvolené město neobsahuje. Případnou synchronizaci Zdraví přes iCloud spravuje Apple nezávisle podle vašeho nastavení.</p>
   <p><strong>Jak data smažu?</strong><br />V Nastavení aplikace zvolte smazání všech dat. Tím se odstraní místní cesty, odpojí zdravotní přehled a odebere město. Již vyexportované soubory a původní údaje ve Zdraví se tím nemažou.</p>
   <p><strong>Funguje aplikace bez internetu?</strong><br />Počítadlo, úspory a vestavěné poznatky ano. Počasí, hledání města a otevírání webových zdrojů internet potřebují.</p>
   <p><strong>Co se změnilo u záznamů porušení?</strong><br />Jejich zadávání a stará historie byly odstraněny. Zachová se dosavadní účinné datum počítadla a úspory. Staré záznamy porušení se odstraní také při importu zálohy.</p>
-  <p><strong>Je časová osa zdravotní předpověď?</strong><br />Ne. Shrnuje obecné výsledky výzkumu; počítadlo ani údaje ze Zdraví nepotvrzují osobní zotavení. Aplikace nenahrazuje zdravotní péči.</p>
+  <p><strong>Co znamenají osobní úspěchy a časová cesta?</strong><br />Vycházejí ze začátku vaší cesty, uplynulého času, kalendáře a případně zadaných denních nákladů. Nepoužívají Zdraví a nepotvrzují zdravotní zotavení. Odhad získaného času u cigaret je výpočet podle vašeho zadání, nikoli měření.</p>
+  <p><strong>Je časová osa výzkumných poznatků zdravotní předpověď?</strong><br />Ne. Shrnuje obecné výsledky výzkumu; počítadlo ani údaje ze Zdraví nepotvrzují osobní zotavení. Aplikace nenahrazuje zdravotní péči.</p>
 
   <h2>Bezprostřední ohrožení</h2>
   <p>

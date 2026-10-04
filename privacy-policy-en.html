@@ -16,7 +16,7 @@
 <body>
   <p class="muted"><a href="index.html">← New Direction</a> · <a href="privacy-policy.html" lang="cs">Česky</a></p>
   <h1>Privacy Policy</h1>
-  <p class="muted">Version 1.9 · effective September 20, 2026</p>
+  <p class="muted">Version 1.10 · effective October 4, 2026</p>
 
   <h2>1. Who we are</h2>
   <p>The <strong>New Direction</strong> app (bundle ID <code>cz.novysmer.app</code>) is published by:</p>
@@ -34,10 +34,11 @@
 
   <h2>3. Local data and backups</h2>
   <p><strong>The app has no developer-operated server for Health values or stored journeys.</strong> No account is required. The app has no advertising, cross-app tracking or first-party analytics.</p>
-  <p>Your device stores journeys, start dates, optional personal reasons and daily costs, age and educational acknowledgements, and app-lock settings. Personal notes, past craving records, contacts and other legacy values may remain from earlier versions or imported backups even when the current interface no longer offers entry for them. This update removes slip history, including during import, while preserving the existing effective counter start and savings.</p>
+  <p>Your device stores journeys, start dates, optional personal reasons and daily costs, age and educational acknowledgements, and app-lock settings. Personal notes, past craving records, contacts and other legacy values may remain from earlier versions or imported backups even when the current interface no longer offers entry for them. Since version 1.9, slip history is removed, including during import, while preserving the existing effective counter start and savings.</p>
+  <p>Personal achievements and medals are calculated locally from elapsed time, calendar periods and estimated savings based on entered costs. They do not use Apple Health data and do not confirm health recovery. Identifiers of achievements you have acknowledged are stored with the journey. For cigarettes, you can optionally enter your previous cigarettes per day and minutes per cigarette to calculate an estimate of time gained; these values are stored with the journey.</p>
   <p>Journey storage uses AES-GCM encryption with its key in the iOS Keychain. That file has iOS file protection and is excluded from system backups. The app does not provide its own cloud synchronization.</p>
-  <p>A manual export is a <strong>readable, unencrypted JSON file</strong>. It includes journeys, any retained legacy records and settings stored with them. Health records, the Health overview preference and the selected city are not included in this backup. You choose its destination or recipient in the system share sheet, including your own cloud storage if desired. We do not manage or delete copies outside the app. Import requires the current age, methodology and any alcohol acknowledgements again.</p>
-  <p>The Health overview preference and selected city, including its coordinates, are stored separately in local app settings. These are not copies of Health records or the device's GPS location.</p>
+  <p>A manual export is a <strong>readable, unencrypted JSON file</strong>. It includes journeys, identifiers of acknowledged personal achievements, any entered cigarette time-estimate values, any retained legacy records and settings stored with them. Health records, the Health overview preference, the light or dark appearance preference and the selected city are not included in this backup. You choose its destination or recipient in the system share sheet, including your own cloud storage if desired. We do not manage or delete copies outside the app. Import requires the current age, methodology and any alcohol acknowledgements again.</p>
+  <p>The light or dark appearance preference, Health overview preference and selected city, including its coordinates, are stored separately in local app settings. These are not copies of Health records or the device's GPS location.</p>
 
   <h2>4. Optional Apple Health connection</h2>
   <p>With your permission, the app can use Apple HealthKit to read available sleep records and stages, steps, walking and running distance, and workout information including duration, distance (including cycling and swimming), active energy and available heart rate. You control access through Apple system settings. The main counter and knowledge library do not require this connection.</p>

@@ -16,7 +16,7 @@
 <body>
   <p class="muted"><a href="index.html">← Nový směr</a></p>
   <h1>Zásady ochrany soukromí</h1>
-  <p class="muted">Verze 1.9 · účinné od 20. září 2026</p>
+  <p class="muted">Verze 1.10 · účinné od 4. října 2026</p>
 
   <h2>1. Kdo jsme</h2>
   <p>
@@ -36,10 +36,11 @@
 
   <h2>3. Místní údaje a zálohy</h2>
   <p><strong>Aplikace nemá vlastní server pro zdravotní údaje a uložené cesty.</strong> Není nutný účet; aplikace neobsahuje reklamy, sledování napříč aplikacemi ani vlastní analytiku.</p>
-  <p>V zařízení uchovává vaše cesty, datum začátku, volitelný osobní důvod a denní náklad, potvrzení věku a vzdělávacího účelu a nastavení zámku. Z dřívějších verzí nebo importovaných záloh mohou zůstat osobní poznámky, dřívější záznamy chutí, kontakty a další historické hodnoty, přestože pro ně aktuální rozhraní nenabízí zadávání. Historie porušení se v této aktualizaci odstraňuje také při importu; dosavadní účinný začátek počítadla a úspory zůstávají zachované.</p>
+  <p>V zařízení uchovává vaše cesty, datum začátku, volitelný osobní důvod a denní náklad, potvrzení věku a vzdělávacího účelu a nastavení zámku. Z dřívějších verzí nebo importovaných záloh mohou zůstat osobní poznámky, dřívější záznamy chutí, kontakty a další historické hodnoty, přestože pro ně aktuální rozhraní nenabízí zadávání. Od verze 1.9 se historie porušení odstraňuje také při importu; dosavadní účinný začátek počítadla a úspory zůstávají zachované.</p>
+  <p>Osobní úspěchy a medaile se odvozují místně z času, kalendářních období a odhadu úspor podle zadaných nákladů. Nepoužívají údaje ze Zdraví a nejsou potvrzením zdravotního zotavení. S cestou se ukládají identifikátory úspěchů, které jste již potvrdili. U cigaret lze volitelně zadat dřívější počet cigaret za den a minuty na jednu cigaretu pro výpočet odhadu získaného času; tyto hodnoty se ukládají s cestou.</p>
   <p>Úložiště cest je šifrované pomocí AES-GCM, klíč je v iOS Keychain. Tento soubor má ochranu souborů iOS a je vyloučen ze systémových záloh. Aplikace neposkytuje vlastní cloudovou synchronizaci.</p>
-  <p>Ruční export je <strong>čitelný, nešifrovaný JSON soubor</strong>. Obsahuje cesty, případné uchované historické údaje a nastavení uložená společně s nimi. Údaje ze Zdraví, preference zapnutí zdravotního přehledu ani zvolené město do této zálohy nevstupují. Umístění nebo příjemce volíte v systémovém sdílení vy; můžete zvolit i vlastní cloudové úložiště. Kopie mimo aplikaci nespravujeme ani nemažeme. Při importu se znovu vyžadují aktuální potvrzení věku, metodiky a případného upozornění k alkoholu.</p>
-  <p>Preference zapnutí zdravotního přehledu a zvolené město včetně jeho souřadnic se ukládají odděleně do místních nastavení aplikace. Nejde o kopii zdravotních údajů ani o GPS polohu zařízení.</p>
+  <p>Ruční export je <strong>čitelný, nešifrovaný JSON soubor</strong>. Obsahuje cesty, identifikátory potvrzených osobních úspěchů, případné zadané hodnoty pro odhad času u cigaret, případné uchované historické údaje a nastavení uložená společně s nimi. Údaje ze Zdraví, preference zapnutí zdravotního přehledu, volba světlého či tmavého vzhledu ani zvolené město do této zálohy nevstupují. Umístění nebo příjemce volíte v systémovém sdílení vy; můžete zvolit i vlastní cloudové úložiště. Kopie mimo aplikaci nespravujeme ani nemažeme. Při importu se znovu vyžadují aktuální potvrzení věku, metodiky a případného upozornění k alkoholu.</p>
+  <p>Volba světlého či tmavého vzhledu, preference zapnutí zdravotního přehledu a zvolené město včetně jeho souřadnic se ukládají odděleně do místních nastavení aplikace. Nejde o kopii zdravotních údajů ani o GPS polohu zařízení.</p>
 
   <h2>4. Volitelné propojení se Zdravím</h2>
   <p>Po vašem souhlasu může aplikace přes Apple HealthKit číst dostupný spánek včetně fází, kroky, vzdálenost chůze a běhu a údaje o trénincích včetně délky, vzdálenosti (také při cyklistice a plavání), aktivní energie a dostupného tepu. Rozsah přístupu řídíte v systému Apple. Pro hlavní počítadlo a knihovnu poznatků není propojení nutné.</p>
