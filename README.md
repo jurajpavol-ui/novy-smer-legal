@@ -18,3 +18,10 @@ After a minute, pages will be available at:
 Use these HTTPS URLs in App Store Connect (Privacy Policy URL + Support URL).
 
 Publisher: Juraj Pavol · jurajpavol@infini-systems.cz
+
+## Android privacy policies
+
+- Czech: https://jurajpavol-ui.github.io/novy-smer-legal/privacy-android-cs.html
+- English: https://jurajpavol-ui.github.io/novy-smer-legal/privacy-android-en.html
+
+Approved for publication by the owner on 16 October 2026. These Android-specific pages accompany the existing iOS policies.
