@@ -16,7 +16,7 @@
 <body>
   <p class="muted"><a href="index.html">← Nový směr</a></p>
   <h1>Zásady ochrany soukromí</h1>
-  <p class="muted">Verze 1.11 · účinné od 4. října 2026</p>
+  <p class="muted">Verze 1.14 · účinné od vydání aplikace 1.14 (listopad 2026)</p>
 
   <h2>1. Kdo jsme</h2>
   <p>
@@ -36,11 +36,19 @@
 
   <h2>3. Místní údaje a zálohy</h2>
   <p><strong>Aplikace nemá vlastní server pro zdravotní údaje a uložené cesty.</strong> Není nutný účet; aplikace neobsahuje reklamy, sledování napříč aplikacemi ani vlastní analytiku.</p>
-  <p>V zařízení uchovává vaše cesty, datum začátku, volitelný osobní důvod a denní náklad, potvrzení věku a vzdělávacího účelu a nastavení zámku. Z dřívějších verzí nebo importovaných záloh mohou zůstat osobní poznámky, dřívější záznamy chutí, kontakty a další historické hodnoty, přestože pro ně aktuální rozhraní nenabízí zadávání. Od verze 1.9 se historie porušení odstraňuje také při importu; dosavadní účinný začátek počítadla a úspory zůstávají zachované.</p>
+  <p>V zařízení uchovává vaše cesty, datum začátku, volitelný vlastní název cesty, osobní důvod a denní náklad, potvrzení věku a vzdělávacího účelu a nastavení zámku. Dále ukládá údaje, které sami zadáte v denním používání:</p>
+  <ul>
+    <li><strong>denní záznamy</strong>: úroveň dne (například lehký, těžký nebo výborný den) a volitelnou krátkou soukromou poznámku a záměr,</li>
+    <li><strong>pauzy při chuti</strong>: čas začátku a konce, zvolenou sílu chuti, vybrané spouštěče a výsledek („lépe“, „stejně“, „silnější“),</li>
+    <li><strong>SOS kontakty</strong>: nejvýše dva kontakty se jménem a telefonním číslem, které sami zapíšete. Aplikace nečte váš systémový adresář. Hovor zahajujete klepnutím vy a probíhá v systémové aplikaci Telefon.</li>
+  </ul>
+  <p>Od verze 1.9 se historie porušení odstraňuje také při importu; dosavadní účinný začátek počítadla a úspory zůstávají zachované.</p>
   <p>Osobní úspěchy a medaile se odvozují místně z času, kalendářních období a odhadu úspor podle zadaných nákladů. Nepoužívají údaje ze Zdraví a nejsou potvrzením zdravotního zotavení. S cestou se ukládají identifikátory úspěchů, které jste již potvrdili. U cigaret lze volitelně zadat dřívější počet cigaret za den a minuty na jednu cigaretu pro výpočet odhadu získaného času; tyto hodnoty se ukládají s cestou.</p>
   <p>Úložiště cest je šifrované pomocí AES-GCM, klíč je v iOS Keychain. Tento soubor má ochranu souborů iOS a je vyloučen ze systémových záloh. Aplikace neposkytuje vlastní cloudovou synchronizaci.</p>
-  <p>Ruční export je <strong>čitelný, nešifrovaný JSON soubor</strong>. Obsahuje cesty, identifikátory potvrzených osobních úspěchů, případné zadané hodnoty pro odhad času u cigaret, případné uchované historické údaje a nastavení uložená společně s nimi. Údaje ze Zdraví, preference zapnutí zdravotního přehledu, volba světlého či tmavého vzhledu ani zvolené město do této zálohy nevstupují. Umístění nebo příjemce volíte v systémovém sdílení vy; můžete zvolit i vlastní cloudové úložiště. Kopie mimo aplikaci nespravujeme ani nemažeme. Při importu se znovu vyžadují aktuální potvrzení věku, metodiky a případného upozornění k alkoholu.</p>
-  <p>Volba světlého či tmavého vzhledu, preference zapnutí zdravotního přehledu a zvolené město včetně jeho souřadnic se ukládají odděleně do místních nastavení aplikace. Nejde o kopii zdravotních údajů ani o GPS polohu zařízení.</p>
+  <p>Ruční export zálohy je ve výchozím nastavení <strong>zašifrovaný heslem</strong>, které si sami zvolíte (AES-GCM, klíč odvozený z hesla pomocí PBKDF2). Heslo neznáme a neukládáme; bez něj zálohu nelze obnovit. Šifrování můžete při exportu vědomě vypnout; potom vznikne <strong>čitelný, nešifrovaný JSON soubor</strong>, který po sdílení nic nechrání.</p>
+  <p>Obě varianty zálohy obsahují cesty, denní záznamy včetně poznámek a záměrů, pauzy při chuti, SOS kontakty, identifikátory potvrzených osobních úspěchů, případné zadané hodnoty pro odhad času u cigaret, zvolenou měnu částek a nastavení uložená společně s cestami. Údaje ze Zdraví, preference zapnutí zdravotního přehledu, volba vzhledu ani zvolené město do zálohy nevstupují a po obnovení je nastavíte znovu. Umístění nebo příjemce volíte v systémovém sdílení vy; můžete zvolit i vlastní cloudové úložiště. Kopie mimo aplikaci nespravujeme ani nemažeme. Při importu se znovu vyžadují aktuální potvrzení věku, metodiky a případného upozornění k alkoholu; import lze jednorázově vrátit.</p>
+  <p>Protože se data neukládají do systémové zálohy ani na náš server, je ruční záloha jedinou cestou, jak je přenést na nový telefon nebo obnovit po ztrátě zařízení.</p>
+  <p>Volba vzhledu (světlý, tmavý nebo automatický a vzhled Přehledu), zvolená měna, preference zapnutí zdravotního přehledu a zvolené město včetně jeho souřadnic se ukládají odděleně do místních nastavení aplikace. Nejde o kopii zdravotních údajů ani o GPS polohu zařízení.</p>
 
   <h2>Volitelné widgety</h2>
   <p>Widgety jsou volitelné. V Nastavení aplikace nejprve povolíte zobrazení statistik. Aplikace pak ve společném místním kontejneru svého widgetového rozšíření uloží omezený přehled vybrané cesty: účinný začátek aktuálního úseku, případný denní odhad nákladů a názvy a data nadcházejících milníků. Název návyku předává pouze po samostatném povolení; výchozí zobrazení je „Moje cesta“. Widget nedostává zdravotní údaje, osobní důvod, poznámky, kontakty ani historii cest. Neprovádí síťové požadavky.</p>
